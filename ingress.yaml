@@ -8,11 +8,11 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-  - host: localhost
+  - host: grafana.idp.local
     http:
       paths:
       - pathType: Prefix
-        path: "/grafana"
+        path: "/"
         backend:
           service:
             name: grafana
